@@ -9,7 +9,8 @@ const generateClassName = createGenerateClassName({
 });
 
 export default () => {
-    return (    
+    return (
+    // Creates copy of browser history for us    
     <BrowserRouter>
         <StylesProvider generateClassName={generateClassName}>
             <div>
