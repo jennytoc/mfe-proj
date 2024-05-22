@@ -8,7 +8,8 @@ const domain = process.env.PRODUCTION_DOMAIN; // Where we are hosting our app
 const prodConfig = {
     mode: 'production',
     output: {
-        filename: '[name].[contenthash].js' // Template for naming
+        filename: '[name].[contenthash].js', // Template for naming
+        publicPath: '/container/latest/',
     },
     plugins: [
         new ModuleFederationPlugin({
